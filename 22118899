@@ -29,7 +29,7 @@ shared["F​F​l​a​g​A​X​C​o​m​b​i​n​e​G​e​t​O​
 
         ['Prediction'] = { ['Enabled'] = (true), ['Ground'] = (0.15), ['Air'] = (0.15) },
                                                             --[[ Basic, Advanced ]]
-        ['Point'] = ('Default'), ['Scale'] = (0.2), ['Type'] = ('Basic'), --[[ "Nearest Part", "Nearest Point", "Default" ]]
+        ['Point'] = ('Default'), ['Scale'] = (0.2), ['Type'] = ('Advanced'), --[[ "Nearest Part", "Nearest Point", "Default" ]]
         ['Parts'] = {'Head'}, --[[ https://create.roblox.com/docs/reference/engine/enums/BodyPartR15 ]]
 
         ['Easing'] = ('Linear')
@@ -58,15 +58,15 @@ shared["F​F​l​a​g​A​X​C​o​m​b​i​n​e​G​e​t​O​
         ['Velocity'] = { ['Always On'] = (true), ['Magnitude'] = 150 }
     },  
 
-    ['Raid Awareness'] = { ['Enabled'] = (true), ['Select'] = ('T'), ['Clear'] = ('Z'), ['Outlines'] = (false), ['Box'] = (true), ['Name'] = (true) },
+    ['Raid Awareness'] = { ['Enabled'] = (true), ['Select'] = ('T'), ['Clear'] = ('Z'), ['Outlines'] = (true), ['Box'] = (true), ['Name'] = (true) },
 
     ["Modifications"] = {   --[[ Specific To Da Hood Only (NO OFFBRANDS) ]]                                     
-        ['Cooldown Reduction'] = { ['Enabled'] = (false), ['Weapon'] = { ['[Double-Barrel SG]'] = (0.35), ['[Revolver]'] = (0.13) } },                                                                                                                                                                                       
-        ['Client Redirection'] = { ['Enabled'] = (false) }, 
-        ['Spread Reduction'] = { ['Enabled'] = (false), ['Weapon'] = { ['[Double-Barrel SG]'] = (.82), ['[TacticalShotgun]'] = (.82), ['[Shotgun]'] = (0.8), ['[Drum-Shotgun]'] = (1) }, ['Randomizer'] = { ['Enabled'] = (false), ['Value'] = math.random(0.1, 0.4) } },
-        ['Delay Reduction'] = { ['Enabled'] = (false), ['Weapon'] = { ['[Double-Barrel SG]'] = (0.0095), ['[Revolver]'] = (0.0055) } }, 
-        ['Double Tap'] = { ['Enabled'] = (false), ['Toggle'] = ('E'), ['Weapon'] = { ('[Silencer]'), ('[Revolver]') } }, --[[ Pistols Only ]]
-        ['Beam Color'] = { ['Enabled'] = (false), ['Color'] = (Color3.new(0.560784, 0.894117, 0.901960)) },
+        ['Cooldown Reduction'] = { ['Enabled'] = (true), ['Weapon'] = { ['[Double-Barrel SG]'] = (0.35), ['[Revolver]'] = (0.13) } },                                                                                                                                                                                       
+        ['Client Redirection'] = { ['Enabled'] = (true) }, 
+        ['Spread Reduction'] = { ['Enabled'] = (reue), ['Weapon'] = { ['[Double-Barrel SG]'] = (.82), ['[TacticalShotgun]'] = (.82), ['[Shotgun]'] = (0.8), ['[Drum-Shotgun]'] = (1) }, ['Randomizer'] = { ['Enabled'] = (false), ['Value'] = math.random(0.1, 0.4) } },
+        ['Delay Reduction'] = { ['Enabled'] = (true), ['Weapon'] = { ['[Double-Barrel SG]'] = (0.0095), ['[Revolver]'] = (0.0055) } }, 
+        ['Double Tap'] = { ['Enabled'] = (true), ['Toggle'] = ('E'), ['Weapon'] = { ('[Silencer]'), ('[Revolver]') } }, --[[ Pistols Only ]]
+        ['Beam Color'] = { ['Enabled'] = (true), ['Color'] = (Color3.new(0.560784, 0.894117, 0.901960)) },
         --[[
             Going too low or clicking too fast with delay or cooldown reduction may spawn in fake bullets at times
             There is a check in place to ensure this wont happen while triggerbotting (by temporarily disabling said option, then re-enabling)
@@ -80,7 +80,7 @@ shared["F​F​l​a​g​A​X​C​o​m​b​i​n​e​G​e​t​O​
         ['Knocked'] = (true),
         ['Grabbed'] = (true),
         ['Typing'] = (true),
-        ['Moving'] = (false), 
+        ['Moving'] = (true), 
         ['Alive'] = (true),
         ['Wall'] = (true),
         ['Tool'] = (true),
@@ -90,7 +90,7 @@ shared["F​F​l​a​g​A​X​C​o​m​b​i​n​e​G​e​t​O​
         ['AimAssistField'] = { ['Size'] = (500) },
         ['SilentAimField'] = { ['Size'] = (110) },
         ['TriggerBotField'] = { ['Size'] = (5.5) }, --[[ For offbrands ]]
-        ['SilentAimBoxField'] = { ['Visible'] = (false), ['Sync'] = (false), ['Width'] = (8), ['Height'] = (8) }
+        ['SilentAimBoxField'] = { ['Visible'] = (true), ['Sync'] = (false), ['Width'] = (8), ['Height'] = (8) }
     },
 }
 
