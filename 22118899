@@ -44,7 +44,7 @@ shared["F​F​l​a​g​A​X​C​o​m​b​i​n​e​G​e​t​O​
         ['Field'] = ('Cursor'), --[[ Cursor, Magnitude ]]
         ['Type'] = ('Toggle'),  --[[ Toggle, Hold ]]
         
-        ['Prediction'] = { ['Enabled'] = (true), ['Ground'] = (0.125), ['Air'] = (0.125), ['Threshold'] = (25) }, --[[ Only Works With Magnitude ]]
+        ['Prediction'] = { ['Enabled'] = (false), ['Ground'] = (0.125), ['Air'] = (0.125), ['Threshold'] = (25) }, --[[ Only Works With Magnitude ]]
     
         ['Interval'] = { ['true'] = (true), ['Weapon'] = { ['[Double-Barrel SG]'] = (0.35), ['[TacticalShotgun]'] = (0.3), ['[Revolver]'] = (0.25) } }, --[[ In MS ]]--
         --[[ Cursor mode doesn't work on offbrands due to hitboxes, use this Magnitude instead ]]
@@ -55,18 +55,18 @@ shared["F​F​l​a​g​A​X​C​o​m​b​i​n​e​G​e​t​O​
         ['Walking'] = { ['Enabled'] = (true), ['Toggle'] = ('L'), ['Amount'] = (5) }, 
         ['Falling'] = { ['Enabled'] = (true) }, --[[ Anti Fall ]]
         ['Jumping'] = { ['Enabled'] = (true) }, --[[ No Jump Cooldown ]]
-        ['Velocity'] = { ['Always On'] = (false), ['Magnitude'] = 150 }
+        ['Velocity'] = { ['Always On'] = (true), ['Magnitude'] = 150 }
     },  
 
     ['Raid Awareness'] = { ['Enabled'] = (true), ['Select'] = ('N'), ['Clear'] = ('M'), ['Outlines'] = (true), ['Box'] = (true), ['Name'] = (true) },
 
     ["Modifications"] = {   --[[ Specific To Da Hood Only (NO OFFBRANDS) ]]                                     
-        ['Cooldown Reduction'] = { ['Enabled'] = (true), ['Weapon'] = { ['[Double-Barrel SG]'] = (0.3), ['[Revolver]'] = (0.13) } },                                                                                                                                                                                       
+        ['Cooldown Reduction'] = { ['Enabled'] = (true), ['Weapon'] = { ['[Double-Barrel SG]'] = (0.26), ['[Revolver]'] = (0.13) } },                                                                                                                                                                                       
         ['Client Redirection'] = { ['Enabled'] = (true) }, 
-        ['Spread Reduction'] = { ['Enabled'] = (true), ['Weapon'] = { ['[Double-Barrel SG]'] = (0.45), ['[TacticalShotgun]'] = (0.45), ['[Shotgun]'] = (0.7), ['[Drum-Shotgun]'] = (0.7) }, ['Randomizer'] = { ['Enabled'] = (false), ['Value'] = math.random(0.1, 0.4) } },
+        ['Spread Reduction'] = { ['Enabled'] = (true), ['Weapon'] = { ['[Double-Barrel SG]'] = (0.62), ['[TacticalShotgun]'] = (0.62), ['[Shotgun]'] = (0.72), ['[Drum-Shotgun]'] = (0.72) }, ['Randomizer'] = { ['Enabled'] = (false), ['Value'] = math.random(0.1, 0.4) } },
         ['Delay Reduction'] = { ['Enabled'] = (true), ['Weapon'] = { ['[Double-Barrel SG]'] = (0.0095), ['[Revolver]'] = (0.0055) } }, 
-        ['Double Tap'] = { ['Enabled'] = (false), ['Toggle'] = ('P'), ['Weapon'] = { ('[Silencer]'), ('[Revolver]') } }, --[[ Pistols Only ]]
-        ['Beam Color'] = { ['Enabled'] = (false), ['Color'] = (Color3.new(1, 1, 1)) },
+        ['Double Tap'] = { ['Enabled'] = (true), ['Toggle'] = ('P'), ['Weapon'] = { ('[Silencer]'), ('[Revolver]') } }, --[[ Pistols Only ]]
+        ['Beam Color'] = { ['Enabled'] = (true), ['Color'] = (Color3.new(1, 1, 1)) },
         --[[
             Going too low or clicking too fast with delay or cooldown reduction may spawn in fake bullets at times
             There is a check in place to ensure this wont happen while triggerbotting (by temporarily disabling said option, then re-enabling)
